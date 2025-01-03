@@ -1,0 +1,130 @@
+.firstSectionMY {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+}
+
+.porfolio {
+  margin-top: 10rem;
+}
+
+body,
+header {
+  background-color: rgb(57, 62, 71);
+  color: white;
+}
+
+header {
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+span {
+  color: white;
+}
+
+strong {
+  color: rgb(206, 148, 48);
+}
+
+nav {
+  transition: all 1s ease;
+}
+
+.active,
+.myBtn {
+  background-color: none !important;
+  color: white;
+  border: 1px solid rgb(206, 148, 48);
+}
+.active:hover,
+.myBtn:hover {
+  background-color: rgb(240, 178, 71) !important;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: rgb(206, 148, 48);
+}
+
+.custom-toggler {
+  border-color: white;
+  color: rgb(206, 148, 48);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(./img/application.png);
+}
+
+.customH2 {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.ulContact {
+  border-right: 1px solid white;
+  border-radius: 0% !important;
+}
+
+.habSection {
+  background-color: rgb(51, 54, 59);
+}
+
+.zoom {
+  transition: transform 0.3s ease;
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.imgSizes {
+  height: 100px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+}
+.card-body {
+  background-color: rgb(51, 54, 59);
+}
+.card-body p {
+  color: white;
+}
+
+.hiddenUl {
+  display: none;
+}
+@media (max-width: 768px) {
+  .ulContact {
+    border-right: 0px solid white;
+  }
+  .ulLiCont {
+    border-bottom: 2px solid rgb(206, 148, 48);
+    padding-bottom: 15px;
+  }
+  .hidden {
+    display: none;
+  }
+  .hiddenUl {
+    display: flex;
+  }
+
+  .imgSizes {
+    height: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    max-width: 80%;
+  }
+
+  .firstSectionMY {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .imgSizes {
+    height: 50px;
+  }
+}
