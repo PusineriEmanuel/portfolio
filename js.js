@@ -102,7 +102,7 @@ function allTheNewCodeIAmLearning() {
     alert("move left");
     alert("move left");
     alert("enter house");
-    return Math.floor(money & 1.5);
+    return Math.floor(money % 1.5);
   }
   /* milk part 2 */
   function getMilk(money, costPerBottle) {
@@ -110,7 +110,7 @@ function allTheNewCodeIAmLearning() {
       "Go and buy " + numBottles(money, costPerBottle) + " bottles of Milk."
     );
 
-    return amountOfChange(money, costPerBottle);
+    return Math.floor(amountOfChange(money, costPerBottle));
   }
 
   function numBottles(initialMoney, bottlePrice) {
@@ -129,12 +129,12 @@ function allTheNewCodeIAmLearning() {
   var n = Math.random();
   n *= 6;
   console.log(Math.floor(n) + 1);
+
   /*  part 2*/
   let nom1 = prompt("cual es tu nombre?");
   let nom2 = prompt("cual es tu nombre?");
 
-  let n = Math.random() * 100;
-  n = Math.floor(n) + 1;
+  let n = Math.floor(Math.random() * 100) + 1;
 
   alert(nom1 + " & " + nom2 + " son " + n + "% compatibles");
 
@@ -152,6 +152,7 @@ function allTheNewCodeIAmLearning() {
   } else {
     console.log("Sorry, maybe next time");
   }
+
   /* FizzBuzz */
   var output = [];
   var baseNum = 0;
@@ -171,15 +172,35 @@ function allTheNewCodeIAmLearning() {
     console.log(output);
   }
 
+  function FizzBuzz() {
+    var Output = [];
+    var BaseNum = 1;
+
+    while (BaseNum <= 100) {
+      if (BaseNum % 3 === 0 && BaseNum % 5 === 0) {
+        Output.push("FizzBuzz");
+      } else if (BaseNum % 3 === 0) {
+        Output.push("Fizz");
+      } else if (BaseNum % 5 === 0) {
+        Output.push("Buzz");
+      } else {
+        Output.push(BaseNum);
+      }
+      BaseNum++;
+    }
+    console.log(Output);
+  }
+
   /* use mathfloor to complete the random part of the exercise */
   function whosPaying(names) {
     /******Don't change the code above*******/
 
     //Write your code here.
+    //names array of names
+    //tenes que pasar el array de names en un valor aleatorio
 
-    let number = Math.floor(Math.random() * names.length);
-
-    return names[number] + " is going to buy lunch today!";
+    let randomNum = Math.floor(Math.random() * names.length);
+    return names[randomNum] + " is going to buy lunch today!";
 
     /******Don't change the code below*******/
   }
