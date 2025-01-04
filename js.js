@@ -55,8 +55,6 @@ function allTheNewCodeIAmLearning() {
   );
   alert("tu mensaje quedara asi:" + promptInfo.slice(0, 140));
 
-  alert(prompt("escribe tu mensaje aqui").slice(0, 140));
-
   /* slicing first letter upper case */
   var string = prompt("ingresar nombre");
   string = string.toLowerCase();
