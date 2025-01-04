@@ -171,7 +171,7 @@ function allTheNewCodeIAmLearning() {
 
     console.log(output);
   }
-
+  /* FizzBuzz with while*/
   function FizzBuzz() {
     var Output = [];
     var BaseNum = 1;
@@ -187,6 +187,23 @@ function allTheNewCodeIAmLearning() {
         Output.push(BaseNum);
       }
       BaseNum++;
+    }
+    console.log(Output);
+  }
+  /* FizzBuzz with for*/
+  function FizzBuzz() {
+    var Output = [];
+
+    for (var BaseNum = 1; BaseNum <= 100; BaseNum++) {
+      if (BaseNum % 3 === 0 && BaseNum % 5 === 0) {
+        Output.push("FizzBuzz");
+      } else if (BaseNum % 3 === 0) {
+        Output.push("Fizz");
+      } else if (BaseNum % 5 === 0) {
+        Output.push("Buzz");
+      } else {
+        Output.push(BaseNum);
+      }
     }
     console.log(Output);
   }
