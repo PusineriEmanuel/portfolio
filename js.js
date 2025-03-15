@@ -254,4 +254,23 @@ function allTheNewCodeIAmLearning() {
   console.log(
     "Go to the store and buy some more, 99 bottles of beer on the wall."
   );
+
+  function fibonacciGenerator(n) {
+    var arr = [];
+    var sum = 0;
+
+    for (var i = 0; i < n; i++) {
+      if (arr.length > 1) {
+        sum = arr[i - 2] + arr[i - 1];
+        arr.push(sum);
+      } else {
+        arr.push(i);
+      }
+    }
+    return arr;
+  }
+
+  //array as an output
+  //result should be done as an output from the function
+  //the frist two numbers must be zero and one
 }
