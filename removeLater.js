@@ -33,7 +33,6 @@ class TypeWriter {
     }, this.delay);
   }
 }
-
 // Función para inicializar cuando se carga la página
 document.addEventListener("DOMContentLoaded", function () {
   // Buscar el elemento h1 con id 'typewriter'
@@ -48,5 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     typewriter.start();
+  }
+
+  // Animación del header - aparece después de 2 segundos
+  const headerContainer = document.querySelector("header .container");
+  if (headerContainer) {
+    setTimeout(() => {
+      headerContainer.classList.add("show");
+    }, 2000); // 2 segundos de delay
   }
 });
