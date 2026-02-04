@@ -1,6 +1,6 @@
 function responsiveButtonCol() {
   const responsiveButtonCol = document.getElementsByClassName(
-    "responsiveButtonCol"
+    "responsiveButtonCol",
   );
   for (let i = 0; i < responsiveButtonCol.length; i++) {
     if (window.innerWidth <= 768) {
@@ -51,7 +51,7 @@ function allTheNewCodeIAmLearning() {
       promptInfo.length +
       " caracteres, te quedan " +
       caracteresRestantes +
-      " caracteres"
+      " caracteres",
   );
   alert("tu mensaje quedara asi:" + promptInfo.slice(0, 140));
 
@@ -77,7 +77,7 @@ function allTheNewCodeIAmLearning() {
         " weeks, " +
         "and " +
         mesesRestantes +
-        " months left."
+        " months left.",
     );
   }
 
@@ -107,7 +107,7 @@ function allTheNewCodeIAmLearning() {
   /* milk part 2 */
   function getMilk(money, costPerBottle) {
     console.log(
-      "Go and buy " + numBottles(money, costPerBottle) + " bottles of Milk."
+      "Go and buy " + numBottles(money, costPerBottle) + " bottles of Milk.",
     );
 
     return Math.floor(amountOfChange(money, costPerBottle));
@@ -122,7 +122,7 @@ function allTheNewCodeIAmLearning() {
   }
 
   console.log(
-    "Hello master, here is your " + getMilk(5, 1.5) + " dollars of change"
+    "Hello master, here is your " + getMilk(5, 1.5) + " dollars of change",
   );
 
   /* math random */
@@ -134,7 +134,8 @@ function allTheNewCodeIAmLearning() {
   let nom1 = prompt("cual es tu nombre?");
   let nom2 = prompt("cual es tu nombre?");
 
-  let n = Math.floor(Math.random() * 100) + 1;
+  /*  put this as a comment so i dont get an error on the console
+  let n = Math.floor(Math.random() * 100) + 1; */
 
   alert(nom1 + " & " + nom2 + " son " + n + "% compatibles");
 
@@ -230,29 +231,29 @@ function allTheNewCodeIAmLearning() {
         numOfBottles +
           " bottle of beer on the wall," +
           numOfBottles +
-          " bottle of beer."
+          " bottle of beer.",
       );
       console.log(
-        "Take one down and pass it around, no more bottles of beer on the wall."
+        "Take one down and pass it around, no more bottles of beer on the wall.",
       );
     } else {
       console.log(
         numOfBottles +
           " bottles of beer on the wall," +
           numOfBottles +
-          " bottles of beer."
+          " bottles of beer.",
       );
       console.log(
         "Take one down and pass it around," +
           (numOfBottles - 1) +
-          " bottles of beer on the wall."
+          " bottles of beer on the wall.",
       );
     }
     numOfBottles--;
   }
   console.log("No more bottles of beer on the wall, no more bottles of beer.");
   console.log(
-    "Go to the store and buy some more, 99 bottles of beer on the wall."
+    "Go to the store and buy some more, 99 bottles of beer on the wall.",
   );
 
   function fibonacciGenerator(n) {

@@ -29,6 +29,10 @@ nav {
   transition: all 1s ease;
 }
 
+#navbarNav {
+  margin-right: 35px;
+}
+
 .active,
 .myBtn {
   background-color: none !important;
@@ -134,5 +138,23 @@ nav {
 
   .imgSizes {
     height: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 13px;
+    top: 13%;
+    transform: translateY(-50%);
+    width: auto;
+  }
+  .navbar-toggler-icon {
+  }
+
+  .navbar-collapse {
+    clear: both;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
   }
 }
