@@ -149,8 +149,6 @@ nav {
     transform: translateY(-50%);
     width: auto;
   }
-  .navbar-toggler-icon {
-  }
 
   .navbar-collapse {
     clear: both;
