@@ -139,6 +139,34 @@ nav {
   .imgSizes {
     height: 50px;
   }
+
+  .firstP {
+    font-size: 1rem;
+  }
+
+  /*   h1 {
+    font-size: 2rem !important;
+  } */
+
+  .firstP,
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .codeImg {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.7rem !important;
+  }
+  .firstP {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -154,5 +182,14 @@ nav {
     clear: both;
     margin-top: 1rem;
     transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  .firstP {
+    font-size: 0.95rem;
   }
 }
