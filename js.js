@@ -26,6 +26,21 @@ function responsiveHabSection() {
 window.addEventListener("resize", responsiveHabSection);
 window.addEventListener("load", responsiveHabSection);
 
+const contactButtonContainer = document.getElementById(
+  "contactButtonContainer",
+);
+function responsiveContactButton() {
+  if (contactButtonContainer) {
+    if (window.innerWidth <= 768) {
+      contactButtonContainer.classList.add("order-2");
+    } else {
+      contactButtonContainer.classList.remove("order-2");
+    }
+  }
+}
+window.addEventListener("resize", responsiveContactButton);
+window.addEventListener("load", responsiveContactButton);
+
 let color = 0;
 
 function cambiarColor() {
@@ -40,6 +55,7 @@ function cambiarColor() {
     color -= 1;
   }
 }
+
 /* PRACTICE -------------------------------------------------------------------- */
 function allTheNewCodeIAmLearning() {
   /* slicing */

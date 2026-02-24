@@ -43,6 +43,10 @@ nav {
 .myBtn:hover {
   background-color: rgb(240, 178, 71) !important;
 }
+#habilidades a {
+  color: white;
+  text-decoration: none;
+}
 
 .nav-link {
   color: white;
@@ -97,6 +101,10 @@ nav {
 
 .hiddenUl {
   display: none;
+}
+
+.angleRotate:hover {
+  transform: rotate(-20deg);
 }
 @media (max-width: 768px) {
   .ulContact {
@@ -191,5 +199,25 @@ nav {
   }
   .firstP {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  h1 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+  .firstP {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+  }
+  .contactButtonContainer {
+    margin-top: 60px;
   }
 }
