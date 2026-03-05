@@ -106,6 +106,10 @@ nav {
 .angleRotate:hover {
   transform: rotate(-20deg);
 }
+
+button a {
+  color: white;
+}
 @media (max-width: 768px) {
   .ulContact {
     border-right: 0px solid white;
