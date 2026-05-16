@@ -110,7 +110,20 @@ nav {
 button a {
   color: white;
 }
+
+.cardImg {
+  height: auto;
+  max-height: 350px;
+  min-height: 350px;
+}
+
 @media (max-width: 768px) {
+  .cardImg {
+    height: auto;
+    max-height: 200px;
+    min-height: 200px;
+  }
+
   .ulContact {
     border-right: 0px solid white;
   }
